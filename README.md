@@ -47,6 +47,6 @@ bool XMuxTask::Open(const char* url,
     AVRational* audio_time_base 
 )
 ```
-1. url 为要保存的文件地址，video_para 为视频参数，video_time_base 为视频时间基，audio_para 为音频参数，audio_time_base 为音频的时间基
+1. url 为要保存的文件地址，video_para 为视频参数，video_time_base 为视频时间基，audio_para 为音频参数，audio_time_base 为音频的时间基。
 设置成功返回true，失败返回false
 
