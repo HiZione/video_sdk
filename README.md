@@ -21,7 +21,7 @@ void XThread::Stop()
 ```
 3. 停止线程
 
-##### 二、解封装线程(XDemuxTask)
+##### 二、解封装线程(class XDemuxTask :public XThread)
 ```C++
 bool XDemuxTask::Open(std::string url, int timeout_ms)
 ```
@@ -38,7 +38,7 @@ std::shared_ptr<XPara> CopyAudioPara()
 ```
 3. 返回音频参数的智能指针
 
-##### 三、封装线程(XMuxTask)
+##### 三、封装线程(class XMuxTask :public XThread)
 ```C++
 bool XMuxTask::Open(const char* url,
     AVCodecParameters* video_para,
